@@ -31,7 +31,7 @@ function __my_prmpt_cmd {
     # Unfortunately, we must call the external binary whoami to find out who
     # we are since its the only reliable way of identifying who we currently
     # are. (Please prove me wrong! I dislike having to use this.)
-    myUSER=$(whoami)
+    myUSER=$LOGNAME
     USER_WIDTH=${#myUSER}
 
     # Make PWD nicer by replacing our home directory with ~ if possible.
